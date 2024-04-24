@@ -3,17 +3,33 @@ import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.*;
-
+/*
 import cucumber.api.DataTable;
 import cucumber.api.Delimiter;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
 import cucumber.api.java.en.Then;
+*/
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.DataTableType;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 
 public class Stepdefs {
 
 	public Microwave microwave;
+
+	@DataTableType
+	public Preset convertToPreset(Map<String, String> entry){
+		return new Preset(
+				entry.get("name"),
+				Integer.parseInt(entry.get("timeToCook")),
+				Integer.parseInt(entry.get("powerLevel"))
+		);
+	}
 
 	public void printDigits(byte [] digits) {
     	System.out.println("Digits is: " + 
@@ -52,7 +68,8 @@ public class Stepdefs {
 	@Given("^foobars are$")
     // public void presets_are(List<List<String>> arg) throws Throwable {
     public void foobars_are(DataTable arg) throws Throwable {
-		List<List<String>> doubleList = arg.raw(); 
+		//List<List<String>> doubleList = arg.raw();
+		List<List<String>> doubleList =
 		List<Map<String, String>> keyValueList = arg.asMaps(String.class, String.class);
 		System.out.println("foobars (as list list) are: " + doubleList);
 		System.out.println("foobars (as list map) are: " + keyValueList.toString());

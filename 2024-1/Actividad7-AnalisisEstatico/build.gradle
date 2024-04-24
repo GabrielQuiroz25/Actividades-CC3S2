@@ -19,6 +19,7 @@ buildscript {
 
 plugins {
     id "info.solidsoft.pitest" version "1.7.0" // Updated
+    id "org.sonarqube" version "4.4.1.3373"
 }
 
 // Apply the java-library plugin to add support for Java Library
@@ -70,3 +71,11 @@ pitest {
     targetClasses = ['microwave.*']  // Adjusted to match your package structure
 }
 
+sonar {
+    properties {
+        property "sonar.projectKey", "actividad-7_microwave-3"
+        property "sonar.organization", "actividad-7"
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.token" , "9b0032b26035f8917c82ce60428606e710dfd336"
+    }
+}
