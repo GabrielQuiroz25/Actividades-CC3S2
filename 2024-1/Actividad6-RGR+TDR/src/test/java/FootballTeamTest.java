@@ -44,6 +44,7 @@ public class FootballTeamTest {
     @ValueSource(ints = {-1,-10})
     void constructorShouldThrowExceptionForIllegalGamesNb(int illegalNbOfGames) {
        assertThatExceptionOfType(IllegalArgumentException.class)
+               .as("Lanza una Excepción: IllegalArgumentException")
                .isThrownBy(()->{new FootballTeam(illegalNbOfGames);});
     }
 
@@ -52,13 +53,36 @@ public class FootballTeamTest {
     @Test
     void shouldBePossibleToCompareTeams(){
         FootballTeam team = new FootballTeam(ANY_NUMBER);
-        assertThat(team).isInstanceOf(Comparable.class);
+        assertThat(team)
+                .as("Son comparables")
+                .isInstanceOf(Comparable.class);
     }
 
     @Test
     void teamsWithMoreMatchesWonShouldBeGreather(){
-        FootballTeam footballTeam_2 = new FootballTeam(2);
-        FootballTeam footballTeam_3 = new FootballTeam(3);
+        FootballTeam team_2 = new FootballTeam(2);
+        FootballTeam team_3 = new FootballTeam(3);
+        assertThat(team_3.compareTo(team_2))
+                .as("Comparación de equipo mayor con equipo menor")
+                .isGreaterThan(0);
+    }
+
+    @Test
+    void teamsWithLessMatchesWonShouldBeLesser(){
+        FootballTeam team_2 = new FootballTeam(2);
+        FootballTeam team_3 = new FootballTeam(3);
+        assertThat(team_2.compareTo(team_3))
+                .as("Comparación de equipo menor con equipo mayor")
+                .isLessThan(0);
+    }
+
+    @Test
+    void teamsWithSameNumberOfMatchesWonShouldBeEqual(){
+        FootballTeam A = new FootballTeam(2);
+        FootballTeam B = new FootballTeam(2);
+        assertThat(A.compareTo(B))
+                .as("Comparación de equipos iguales")
+                .isEqualTo(0);
     }
 
 

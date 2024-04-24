@@ -39,8 +39,21 @@ public class FootballTeam implements Comparable<FootballTeam>{
         return gamesWon;
     }
 
+    /*
     @Override
     public int compareTo(FootballTeam otherTeam) {
+        if(gamesWon > otherTeam.gamesWon){
+            return 1;
+        }else if(gamesWon < otherTeam.gamesWon){
+            return -1;
+        }
+        //return 23425352;
         return 0;
+    }
+    */
+
+    @Override
+    public int compareTo(FootballTeam otherTeam) {
+        return gamesWon- otherTeam.gamesWon;
     }
 }
