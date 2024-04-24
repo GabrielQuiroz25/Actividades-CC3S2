@@ -11,3 +11,4 @@ Feature: BellyFeature
     Then my belly Should not Growl
 
   Scenario: eaten many cukes and not growl
+    Given I have eaten 10 cukes

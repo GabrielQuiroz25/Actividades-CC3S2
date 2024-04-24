@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FootballTeamTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-04-24T12:34:57" hostname="DESKTOP-530OV67" time="1.531">
+  <properties/>
+  <testcase name="[1] -1" classname="FootballTeamTest" time="1.238"/>
+  <testcase name="[2] -10" classname="FootballTeamTest" time="0.046"/>
+  <testcase name="teamsWithMoreMatchesWonShouldBeGreather()" classname="FootballTeamTest" time="0.007"/>
+  <testcase name="shouldBePossibleToCompareTeams()" classname="FootballTeamTest" time="0.017"/>
+  <testcase name="[1] 0" classname="FootballTeamTest" time="0.132"/>
+  <testcase name="[2] 1" classname="FootballTeamTest" time="0.007"/>
+  <testcase name="[3] 3" classname="FootballTeamTest" time="0.007"/>
+  <testcase name="[4] 10" classname="FootballTeamTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
