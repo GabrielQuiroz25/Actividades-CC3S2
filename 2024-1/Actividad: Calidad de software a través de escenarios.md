@@ -29,9 +29,9 @@ La latencia de Internet es menor de 75 ms desde el navegador del cliente hasta e
 
 **Artefacto:** Sitio web Youtube
 
-**Respuesta:** El sistema de búsqueda ofrece múltiples sugerencias contextuales en caso de que el usuario cometa un error al escribir en la barra de búsqueda.
+**Respuesta:** El sistema de búsqueda ofrece multiples sugerencias contextuales en caso de que el usuario realize un error al escribir en la barra de búsqueda.
 
-**Medida de respuesta:** El sistema cumple con la heurística de usabilidad prevencion de errores al evitar que ocurran problemas de interacción.
+**Medida de respuesta:** El sistema cumple con la heurística de usabilidad de Nielsen prevencion de errores al evitar que ocurran problemas de interacción en el flujo de búsqueda.
 
 # Escalabilidad
 **Importancia:** La escalabilidad asegura que la calidad de la experiencia del usuario no se vea afectada con el ingreso de nuevos usuarios al sistema.
@@ -47,4 +47,6 @@ La latencia de Internet es menor de 75 ms desde el navegador del cliente hasta e
 
 **Respuesta:** El sistema no presenta incremento en el tiempo de respuesta
 
-**Medida de respuesta:**  
+
+
+[Respuestas de Lerzundi](https://github.com/Jxtrex/Lerzundi-CC3S2_2024-1/tree/main/ACTIVIDADES/Practicas%20de%20ingenieria%20para%20construir%20software%20de%20calidad/Actividad%20Calidad%20de%20software%20a%20traves%20de%20escenarios)
