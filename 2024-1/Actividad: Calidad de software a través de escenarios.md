@@ -29,9 +29,11 @@ La latencia de Internet es menor de 75 ms desde el navegador del cliente hasta e
 
 **Artefacto:** Sitio web Youtube
 
-**Respuesta:** El sistema de búsqueda ofrece multiples sugerencias contextuales en caso de que el usuario realize un error al escribir en la barra de búsqueda.
+**Respuesta:** El sistema de búsqueda ofrece múltiples sugerencias contextuales al escribir el nombre de un video en la barra de búsqueda.
 
-**Medida de respuesta:** El sistema cumple con la heurística de usabilidad de Nielsen prevencion de errores al evitar que ocurran problemas de interacción en el flujo de búsqueda.
+**Medida de respuesta:** El sistema cumple con las siguientes heurísticas de usabilidad de Nielsen: 
+- Prevencion de errores al evitar que ocurran problemas cuando el usuario ingrese un nombre incorrecto.
+- Visibilidad y estado del sistema al mostrar explícitamente distintas sugerencias mientras se van digitando las letras.
 
 # Escalabilidad
 **Importancia:** La escalabilidad asegura que la calidad de la experiencia del usuario no se vea afectada con el ingreso de nuevos usuarios al sistema.
